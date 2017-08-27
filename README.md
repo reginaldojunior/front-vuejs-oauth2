@@ -1,6 +1,6 @@
 # Front Vue.js OAuth2
 
-> A project Vue.js to core Winners
+> A project Vue.js OAuth2
 
 ## Build Setup
 

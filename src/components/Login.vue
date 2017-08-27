@@ -4,7 +4,7 @@
     <div class="four wide column box-center">
       <h1>Faça o Login</h1>
 
-      <form v-on:submit="handleSubmit($event)">
+      <form @submit.prevent='handleSubmit()'>
         <div class="ui form segment">
           <div class="field">
             <label>E-mail</label>
@@ -41,9 +41,7 @@ export default {
     }
   },
   methods: {
-    handleSubmit: function (e) {
-      e.preventDefault()
-
+    handleSubmit (e) {
       this.$auth.login({
         params: this.user,
         method: 'POST',

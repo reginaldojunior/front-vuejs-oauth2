@@ -25,7 +25,7 @@ export default {
     this.getData()
   },
   methods: {
-    getData: function () {
+    getData () {
       this.$http.post(process.env.API + '/api/details', function (data) {
       }, {headers: {'Authorization': 'Bearer ' + localStorage.token}})
       .then(response => {
