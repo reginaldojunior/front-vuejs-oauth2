@@ -1,4 +1,4 @@
-# core
+# Front Vue.js OAuth2
 
 > A project Vue.js to core Winners
 
